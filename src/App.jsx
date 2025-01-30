@@ -22,6 +22,9 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './App.css'
 import Home from './components/components';
 import BlogPost from './components/components/pages/BlogDetails';
+import GallerySection from './components/components/Gallery';
+import EventSection from './components/components/Events';
+import ContactSection from './components/components/Contact';
 
 
 
@@ -34,6 +37,18 @@ function App() {
     {
       path: "/blog-post",
       element:<BlogPost />
+    },
+    {
+      path: "/gallery",
+      element:<GallerySection />
+    },
+    {
+      path: "/events",
+      element:<EventSection />
+    },
+    {
+      path: "/contact",
+      element:<ContactSection />
     },
   
   ]);
